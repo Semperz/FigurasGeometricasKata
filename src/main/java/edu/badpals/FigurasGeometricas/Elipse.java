@@ -1,6 +1,6 @@
 package edu.badpals.FigurasGeometricas;
 
-public class Elipse extends FiguraGeometrica{
+public class Elipse extends FiguraGeometrica implements Drawable{
     private double ejeMayor=0d;
     private double ejeMenor=0d;
 
@@ -29,4 +29,11 @@ public class Elipse extends FiguraGeometrica{
     public double area() {
         return Math.PI*getEjeMayor()*getEjeMenor();
     }
+
+
+    @Override
+    public void draw() {
+        System.out.println("Esto es un: "+ getNombre());
+    }
 }
+
