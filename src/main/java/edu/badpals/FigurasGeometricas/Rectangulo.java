@@ -1,6 +1,6 @@
 package edu.badpals.FigurasGeometricas;
 
-public class Rectangulo extends FiguraGeometrica{
+public class Rectangulo extends FiguraGeometrica implements Drawable{
     private int vertical = 0;
     private int horizontal = 0;
 
@@ -28,4 +28,14 @@ public class Rectangulo extends FiguraGeometrica{
     public double area() {
         return (double) getHorizontal()*getVertical();
     }
+    @Override
+    public void applyTheme() {
+        System.out.println("Aplicando un tema a: "+ getNombre());
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Esto es un: "+ getNombre());
+    }
 }
+
