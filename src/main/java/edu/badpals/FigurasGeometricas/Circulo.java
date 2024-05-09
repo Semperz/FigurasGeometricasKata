@@ -13,8 +13,12 @@ public class Circulo extends FiguraGeometrica{
         this.radio=radio;
     }
 
+    public double getRadio() {
+        return radio;
+    }
+
     @Override
     public double area() {
-        return Math.PI*Math.pow(radio,2);
+        return Math.PI*Math.pow(getRadio(),2);
     }
 }
